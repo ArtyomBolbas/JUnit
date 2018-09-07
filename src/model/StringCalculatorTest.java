@@ -65,4 +65,16 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("1 \n2,3");
 		assertEquals(result, 6);
 	}
+	
+	@Test
+	public void test32() {
+		int result = StringCalculator.add("4\n5\n6");
+		assertEquals(result, 15);
+	}
+	
+	@Test
+	public void test33() {
+		int result = StringCalculator.add("77\n");
+		assertEquals(result, 77);
+	}
 }
