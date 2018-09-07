@@ -59,5 +59,10 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("11,22,33");
 		assertEquals(result, 66);
 	}
-
+	
+	@Test
+	public void test31() {
+		int result = StringCalculator.add("1 \n2,3");
+		assertEquals(result, 6);
+	}
 }
