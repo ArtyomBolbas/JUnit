@@ -18,7 +18,9 @@ class StringCalculator {
 			while (st.hasMoreElements()) {
 				String token = st.nextToken();
 				int temp = Integer.parseInt(token);
-				result = result + temp;
+				if (temp < 1001) {
+					result = result + temp;
+				}
 			}
 			return result;
 		}

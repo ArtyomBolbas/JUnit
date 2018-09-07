@@ -77,4 +77,10 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("77\n");
 		assertEquals(result, 77);
 	}
+	
+	@Test
+	public void test41() {
+		int result = StringCalculator.add("1, 1001");
+		assertEquals(result, 1);
+	}
 }
