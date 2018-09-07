@@ -41,5 +41,23 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("1, 2, 3");
 		assertEquals(result, 6);
 	}
+	
+	@Test
+	public void test22() {
+		int result = StringCalculator.add("1,1,1,1");
+		assertEquals(result, 4);
+	}
+	
+	@Test
+	public void test23() {
+		int result = StringCalculator.add("1,2");
+		assertEquals(result, 3);
+	}
+	
+	@Test
+	public void test24() {
+		int result = StringCalculator.add("11,22,33");
+		assertEquals(result, 66);
+	}
 
 }
