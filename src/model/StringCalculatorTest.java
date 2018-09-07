@@ -7,33 +7,39 @@ import org.junit.Test;
 public class StringCalculatorTest {
 
 	@Test
-	public void test() {
+	public void test11() {
 		int result = StringCalculator.add(null);
 		assertEquals(result, 0);
 	}
 
 	@Test
-	public void test2() {
+	public void test12() {
 		int result = StringCalculator.add("");
 		assertEquals(result, 0);
 	}
 	
 	@Test
-	public void test3() {
+	public void test13() {
 		int result = StringCalculator.add("1");
 		assertEquals(result, 1);
 	}
 	
 	@Test
-	public void test4() {
+	public void test14() {
 		int result = StringCalculator.add("1, 2");
 		assertEquals(result, 3);
 	}
 	
 	@Test
-	public void test5() {
+	public void test15() {
 		int result = StringCalculator.add("4");
 		assertEquals(result, 4);
+	}
+	
+	@Test
+	public void test21() {
+		int result = StringCalculator.add("1, 2, 3");
+		assertEquals(result, 6);
 	}
 
 }
