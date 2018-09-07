@@ -107,4 +107,5 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("1001\n1001");
 		assertEquals(result, 0);
 	}
+	
 }
