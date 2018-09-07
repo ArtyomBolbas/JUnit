@@ -83,4 +83,28 @@ public class StringCalculatorTest {
 		int result = StringCalculator.add("1, 1001");
 		assertEquals(result, 1);
 	}
+	
+	@Test
+	public void test42() {
+		int result = StringCalculator.add("1002 \n2");
+		assertEquals(result, 2);
+	}
+	
+	@Test
+	public void test43() {
+		int result = StringCalculator.add("1, 1000");
+		assertEquals(result, 1001);
+	}
+	
+	@Test
+	public void test44() {
+		int result = StringCalculator.add("1000, 1000");
+		assertEquals(result, 2000);
+	}
+	
+	@Test
+	public void test45() {
+		int result = StringCalculator.add("1001\n1001");
+		assertEquals(result, 0);
+	}
 }
